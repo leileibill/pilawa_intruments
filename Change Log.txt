@@ -1,0 +1,17 @@
+Please list most recent changes first, and include the name of the editor.
+
+
+Change Log
+----------
+Jun. 27, 2016: Felix Hsiao added module yokogawa_wt310 under multimeters
+Feb. 25, 2014: Josiah McClurg added continuous sampling capability in multimeters/agilent_34410a
+Jan 31, 2014: Felix Hsiao fixed "readData2()" in multimeters/agilent_34461a and agilent_34410a
+Jan 26, 2014: Felix Hsiao fixed continuous measurement syntax error in multimeters/agilent_34461a
+
+Changes prior to Dec. 26, 2014 are unavailable.
+
+
+Changes that may break old code
+===============================
+-In "keithley_2400.py", "readData()" function changed to be consistent with other instruments; now uses fetch instead of read
+-In "xantrex_xhr4025.py", class "xhr4025" renamed to "prologix_xhr4025" for consistency (was not originally part of "pilawa_instruments.py", so this is just a heads-up for people switching to the new package format)
